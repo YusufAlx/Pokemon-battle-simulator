@@ -62,7 +62,12 @@ charmander_button = tk.Button(
 )
 
 #tells program to put the "Button" in the grid in the window
-charmander_button.grid(row = 0, column = 0, padx = 20, pady = 20)
+charmander_button.grid(
+    row = 0,
+    column = 0,
+    padx = 20,
+    pady = 20
+)
 
 #create button for pokemon choice
 squirtle_button = tk.Button(
@@ -72,7 +77,12 @@ squirtle_button = tk.Button(
     command=lambda: choose_pokemon("Squirtle")
 )
 #tells program to put the "Button" in the grid in the window
-squirtle_button.grid(row = 0, column = 1, padx = 20, pady = 20)
+squirtle_button.grid(
+    row = 0,
+    column = 1,
+    padx = 20,
+    pady = 20
+)
 
 #create button for pokemon choice
 bulbasaur_button = tk.Button(
@@ -82,7 +92,12 @@ bulbasaur_button = tk.Button(
     command=lambda: choose_pokemon("Bulbasaur")
 )
 #tells program to put the "Button" in the grid in the window
-bulbasaur_button.grid(row = 0, column = 2, padx = 20, pady = 20)
+bulbasaur_button.grid(
+    row = 0,
+    column = 2,
+    padx = 20,
+    pady = 20
+)
 
 #This starts the event lopp to allow the window to wait for user interaction
 window.mainloop()
