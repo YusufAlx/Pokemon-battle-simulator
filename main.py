@@ -42,7 +42,7 @@ instruction_label = tk.Label(
 instruction_label.pack()
 
 #creates visual button for a pokemon choice and stored the button in "charmander_button"
-charmander_label = tk.Button(
+charmander_button = tk.Button(
     window,
     text = "Charmander",
     font = ("Arial", 18),
@@ -50,26 +50,26 @@ charmander_label = tk.Button(
 )
 
 #tells program to put the "Button" in the window
-charmander_label.pack()
+charmander_button.pack()
 
 #create button for pokemon choice
-squirtle_label = tk.Button(
+squirtle_button = tk.Button(
     window,
     text = "Squirtle",
     font = ("Arial", 18),
     command= choose_squirtle
 )
 #tells program to put the button in the window
-squirtle_label.pack()
+squirtle_button.pack()
 
 #create button for pokemon choice
-bulbasaur_label = tk.Button(
+bulbasaur_button = tk.Button(
     window,
     text = "Bulbasaur",
     font = ("Arial", 18),
     command= choose_bulbasaur
 )
-bulbasaur_label.pack()
+bulbasaur_button.pack()
 
 #This starts the event lopp to allow the window to wait for user interaction
 window.mainloop()
