@@ -21,7 +21,7 @@ instruction_label = tk.Label(
 )
 #tells program where to put user instructions
 instruction_label.pack()
-#creates visual button for a pokemon choice
+#creates visual button for a pokemon choice and stored the button in "charmander_button"
 charmander_label = tk.Button(
     window,
     text="Charmander",
