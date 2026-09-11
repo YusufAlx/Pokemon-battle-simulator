@@ -1,31 +1,44 @@
 import tkinter as tk
+
 #creates the actual application window
 window = tk.Tk()
+
 #This names our window
 window.title("Yusuf's Pokemon battle Simulator")
-#1000 is the width and 700 is the height of the window 
+
+#1000 is the width and 700 is the height of the window
 window.geometry("1000x700")
+
+#Creating a function for if the player choses charmander
+def choose_charmander():
+    print("You chose Charmander!")
+
 #create a label to display text inside a Window
 title_label = tk.Label(
     window,
     text="Yusuf's Pokemon battle Arena",
     font=("Arial", 40)
 )
+
 #this creates a title in the window
 title_label.pack()
+
 #Create a label for user instructions in the window
 instruction_label = tk.Label(
     window,
     text="Choose your pokemon!",
     font=("Arial", 20)
 )
+
 #tells program where to put user instructions
 instruction_label.pack()
+
 #creates visual button for a pokemon choice and stored the button in "charmander_button"
 charmander_label = tk.Button(
     window,
-    text="Charmander",
-    font=("Arial", 18)
+    text = "Charmander",
+    font = ("Arial", 18),
+    command= choose_charmander
 )
 #tells program to put the "Button" in the window
 charmander_label.pack()
