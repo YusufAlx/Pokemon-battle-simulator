@@ -9,9 +9,17 @@ window.title("Yusuf's Pokemon battle Simulator")
 #1000 is the width and 700 is the height of the window
 window.geometry("1000x700")
 
-#Creating a function for if the player choses charmander
+#Creating a function for if the player chooses charmander
 def choose_charmander():
     print("You chose Charmander!")
+
+#creating function for when player chooses squirtle
+def choose_squirtle():
+    print("You chose Squirtle!")
+
+#creating function for when player chooses squirtle
+def choose_bulbasaur():
+    print("You chose Bulbasaur!")
 
 #create a label to display text inside a Window
 title_label = tk.Label(
@@ -40,8 +48,28 @@ charmander_label = tk.Button(
     font = ("Arial", 18),
     command= choose_charmander
 )
+
 #tells program to put the "Button" in the window
 charmander_label.pack()
+
+#create button for pokemon choice
+squirtle_label = tk.Button(
+    window,
+    text = "Squirtle",
+    font = ("Arial", 18),
+    command= choose_squirtle
+)
+#tells program to put the button in the window
+squirtle_label.pack()
+
+#create button for pokemon choice
+bulbasaur_label = tk.Button(
+    window,
+    text = "Bulbasaur",
+    font = ("Arial", 18),
+    command= choose_bulbasaur
+)
+bulbasaur_label.pack()
 
 #This starts the event lopp to allow the window to wait for user interaction
 window.mainloop()
