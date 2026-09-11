@@ -21,6 +21,14 @@ instruction_label = tk.Label(
 )
 #tells program where to put user instructions
 instruction_label.pack()
+#creates visual button for a pokemon choice
+charmander_label = tk.Button(
+    window,
+    text="Charmander",
+    font=("Arial", 18)
+)
+#tells program to put the "Button" in the window
+charmander_label.pack()
 
 #This starts the event lopp to allow the window to wait for user interaction
 window.mainloop()
