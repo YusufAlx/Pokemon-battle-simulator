@@ -9,16 +9,22 @@ window.title("Yusuf's Pokemon battle Simulator")
 #1000 is the width and 700 is the height of the window
 window.geometry("1000x700")
 
+#player choice variable that is remembered by program
+player_pokemon = None
+
 #Creating a function for if the player chooses charmander
 def choose_charmander():
+    player_pokemon = "Charmander"
     print("You chose Charmander!")
 
 #creating function for when player chooses squirtle
 def choose_squirtle():
+    player_pokemon = "Squirtle"
     print("You chose Squirtle!")
 
 #creating function for when player chooses Bulbasaur
 def choose_bulbasaur():
+    player_pokemon = "Bulbasaur"
     print("You chose Bulbasaur!")
 
 #create a label to display text inside a Window
@@ -54,8 +60,8 @@ charmander_button = tk.Button(
     command= choose_charmander
 )
 
-#tells program to put the "Button" in the window
-charmander_button.pack()
+#tells program to put the "Button" in the grid in the window
+charmander_button.grid(row = 0, column = 0, padx = 20, pady = 20)
 
 #create button for pokemon choice
 squirtle_button = tk.Button(
@@ -64,8 +70,8 @@ squirtle_button = tk.Button(
     font = ("Arial", 18),
     command= choose_squirtle
 )
-#tells program to put the button in the window
-squirtle_button.pack()
+#tells program to put the "Button" in the grid in the window
+squirtle_button.grid(row = 0, column = 1, padx = 20, pady = 20)
 
 #create button for pokemon choice
 bulbasaur_button = tk.Button(
@@ -74,7 +80,8 @@ bulbasaur_button = tk.Button(
     font = ("Arial", 18),
     command= choose_bulbasaur
 )
-bulbasaur_button.pack()
+#tells program to put the "Button" in the grid in the window
+bulbasaur_button.grid(row = 0, column = 2, padx = 20, pady = 20)
 
 #This starts the event lopp to allow the window to wait for user interaction
 window.mainloop()
