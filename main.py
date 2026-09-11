@@ -17,7 +17,7 @@ def choose_charmander():
 def choose_squirtle():
     print("You chose Squirtle!")
 
-#creating function for when player chooses squirtle
+#creating function for when player chooses Bulbasaur
 def choose_bulbasaur():
     print("You chose Bulbasaur!")
 
@@ -41,9 +41,14 @@ instruction_label = tk.Label(
 #tells program where to put user instructions
 instruction_label.pack()
 
+#Pokemon selection frame to hold the buttons
+pokemon_frame = tk.Frame(window)
+#to place the area in the window
+pokemon_frame.pack()
+
 #creates visual button for a pokemon choice and stored the button in "charmander_button"
 charmander_button = tk.Button(
-    window,
+    pokemon_frame,
     text = "Charmander",
     font = ("Arial", 18),
     command= choose_charmander
@@ -54,7 +59,7 @@ charmander_button.pack()
 
 #create button for pokemon choice
 squirtle_button = tk.Button(
-    window,
+    pokemon_frame,
     text = "Squirtle",
     font = ("Arial", 18),
     command= choose_squirtle
@@ -64,7 +69,7 @@ squirtle_button.pack()
 
 #create button for pokemon choice
 bulbasaur_button = tk.Button(
-    window,
+    pokemon_frame,
     text = "Bulbasaur",
     font = ("Arial", 18),
     command= choose_bulbasaur
