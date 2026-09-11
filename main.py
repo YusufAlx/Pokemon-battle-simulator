@@ -13,22 +13,10 @@ window.geometry("1000x700")
 player_pokemon = None
 
 #Creating a function for if the player chooses charmander
-def choose_charmander():
+def choose_pokemon(pokemon):
     global player_pokemon
-    player_pokemon = "Charmander"
-    result_label.config(text="You chose Charmander!")
-
-#creating function for when player chooses squirtle
-def choose_squirtle():
-    global player_pokemon
-    player_pokemon = "Squirtle"
-    result_label.config(text="You chose Squirtle!")
-
-#creating function for when player chooses Bulbasaur and using the .config allows us to change the properties of Tkinter widget
-def choose_bulbasaur():
-    global player_pokemon
-    player_pokemon = "Bulbasaur"
-    result_label.config(text="You chose Bulbasaur!")
+    player_pokemon = pokemon
+    result_label.config(text=f"You chose {pokemon}!")
 
 #create a label to display text inside a Window
 title_label = tk.Label(
@@ -70,7 +58,7 @@ charmander_button = tk.Button(
     pokemon_frame,
     text = "Charmander",
     font = ("Arial", 18),
-    command= choose_charmander
+    command=lambda: choose_pokemon("Charmander")
 )
 
 #tells program to put the "Button" in the grid in the window
@@ -81,7 +69,7 @@ squirtle_button = tk.Button(
     pokemon_frame,
     text = "Squirtle",
     font = ("Arial", 18),
-    command= choose_squirtle
+    command=lambda: choose_pokemon("Squirtle")
 )
 #tells program to put the "Button" in the grid in the window
 squirtle_button.grid(row = 0, column = 1, padx = 20, pady = 20)
@@ -91,7 +79,7 @@ bulbasaur_button = tk.Button(
     pokemon_frame,
     text = "Bulbasaur",
     font = ("Arial", 18),
-    command= choose_bulbasaur
+    command=lambda: choose_pokemon("Bulbasaur")
 )
 #tells program to put the "Button" in the grid in the window
 bulbasaur_button.grid(row = 0, column = 2, padx = 20, pady = 20)
