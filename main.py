@@ -16,19 +16,19 @@ player_pokemon = None
 def choose_charmander():
     global player_pokemon
     player_pokemon = "Charmander"
-    print("You chose Charmander!")
+    result_label.config(text="You chose Charmander!")
 
 #creating function for when player chooses squirtle
 def choose_squirtle():
     global player_pokemon
     player_pokemon = "Squirtle"
-    print("You chose Squirtle!")
+    result_label.config(text="You chose Squirtle!")
 
-#creating function for when player chooses Bulbasaur
+#creating function for when player chooses Bulbasaur and using the .config allows us to change the properties of Tkinter widget
 def choose_bulbasaur():
     global player_pokemon
     player_pokemon = "Bulbasaur"
-    print("You chose Bulbasaur!")
+    result_label.config(text="You chose Bulbasaur!")
 
 #create a label to display text inside a Window
 title_label = tk.Label(
@@ -49,6 +49,16 @@ instruction_label = tk.Label(
 
 #tells program where to put user instructions
 instruction_label.pack()
+
+#creating label or text spot for chosen pokemon
+result_label = tk.Label(
+    window,
+    text="",
+    font=("Arial", 20)
+)
+
+#adding result label to the window
+result_label.pack()
 
 #Pokemon selection frame to hold the buttons
 pokemon_frame = tk.Frame(window)
