@@ -14,16 +14,19 @@ player_pokemon = None
 
 #Creating a function for if the player chooses charmander
 def choose_charmander():
+    global player_pokemon
     player_pokemon = "Charmander"
     print("You chose Charmander!")
 
 #creating function for when player chooses squirtle
 def choose_squirtle():
+    global player_pokemon
     player_pokemon = "Squirtle"
     print("You chose Squirtle!")
 
 #creating function for when player chooses Bulbasaur
 def choose_bulbasaur():
+    global player_pokemon
     player_pokemon = "Bulbasaur"
     print("You chose Bulbasaur!")
 
