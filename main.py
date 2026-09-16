@@ -24,6 +24,57 @@ charmander = Pokemon(
     50,
     65
 )
+#showing the stats of the pokemon
+print(charmander.name, charmander.pokemon_type)
+print(charmander.hp)
+print(charmander.attack)
+print(charmander.defence)
+print(charmander.special_attack)
+print(charmander.special_defence)
+print(charmander.speed)
+
+#Assigning the stats of a pokemon
+squirtle = Pokemon(
+    "Squirtle",
+    "Water",
+    44,
+    48,
+    65,
+    50,
+    64,
+    43
+)
+#Displaying the stats of squirtle
+print(squirtle.name, squirtle.pokemon_type)
+print(squirtle.hp)
+print(squirtle.attack)
+print(squirtle.defence)
+print(squirtle.special_attack)
+print(squirtle.special_defence)
+print(squirtle.speed)
+
+#Assigning the stats of Bulbasaur
+bulbasaur = Pokemon(
+    "Bulbasaur",
+    "Grass",
+    45,
+    49,
+    49,
+    65,
+    65,
+    45
+)
+#displays stats of bulbasaur
+print(bulbasaur.name, bulbasaur.pokemon_type)
+print(bulbasaur.hp)
+print(bulbasaur.pokemon_type)
+print(bulbasaur.hp)
+print(bulbasaur.attack)
+print(bulbasaur.defence)
+print(bulbasaur.special_attack)
+print(bulbasaur.special_defence)
+print(bulbasaur.speed)
+
 
 #Creating a function for if the player chooses charmander
 def choose_pokemon(pokemon):
