@@ -1,4 +1,5 @@
 import tkinter as tk
+from pokemon import Pokemon
 
 #creates the actual application window
 window = tk.Tk()
@@ -11,6 +12,18 @@ window.geometry("1000x700")
 
 #player choice variable that is remembered by program
 player_pokemon = None
+
+#creating object for the pokemon using the Pokemon class and added stats
+charmander = Pokemon(
+    "Charmander",
+    "Fire",
+    39,
+    52,
+    43,
+    60,
+    50,
+    65
+)
 
 #Creating a function for if the player chooses charmander
 def choose_pokemon(pokemon):
